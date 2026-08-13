@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+:root { --blue: #0868f5; --navy: #071735; --muted: #3d4758; }
+* { box-sizing: border-box; }
+html { background: #fff; }
+body { margin: 0; background: #fff; color: var(--navy); font-family: var(--font-poppins), sans-serif; }
+main { width: min(100%, 600px); min-height: 100vh; margin: 0 auto; padding: 48px 22px 28px; }
+.header { text-align: center; }
+.brand-mark { position: relative; width: 166px; height: 138px; margin: 0 auto 16px; }
+.bracket { position: absolute; top: 17px; font: 700 112px/1 Arial, sans-serif; letter-spacing: -20px; }
+.bracket-left { left: 0; color: #071735; transform: scaleX(.72); }
+.bracket-right { right: 10px; color: var(--blue); transform: scaleX(.72); }
+.circuit { position: absolute; height: 4px; border-radius: 4px; background: var(--navy); transform-origin: left; }
+.circuit-a { width: 58px; left: 66px; top: 64px; transform: rotate(-37deg); }
+.circuit-b { width: 58px; left: 78px; top: 83px; transform: rotate(142deg); background: var(--blue); }
+.node { position: absolute; width: 17px; height: 17px; border-radius: 4px; box-shadow: 0 2px 6px #0a4da633; }
+.node-a { left: 74px; top: 6px; background: var(--blue); }
+.node-b { left: 55px; top: 61px; background: var(--navy); }
+.node-c { right: 35px; bottom: 9px; background: var(--blue); }
+.dot { position: absolute; width: 7px; height: 7px; border-radius: 50%; background: var(--blue); }
+.dot-a { right: 51px; top: 34px; }.dot-b { right: 40px; top: 46px; }.dot-c { right: 29px; top: 58px; }
+h1 { margin: 0; font-size: clamp(31px, 9vw, 46px); line-height: 1.08; letter-spacing: .12em; font-weight: 600; white-space: nowrap; }
+.dev { margin: 6px 0 19px; color: var(--blue); font-size: 35px; line-height: 1.2; letter-spacing: .28em; text-indent: .28em; font-weight: 600; }
+.divider { display: flex; align-items: center; justify-content: center; gap: 12px; margin: 0 auto 17px; }
+.divider span { width: 86px; height: 1px; background: linear-gradient(90deg, transparent, var(--blue)); }
+.divider span:last-child { transform: rotate(180deg); }
+.divider i { width: 9px; height: 9px; background: var(--blue); border-radius: 50%; }
+.tagline { margin: 0; color: var(--muted); font-size: clamp(14px, 4vw, 17px); line-height: 1.65; font-weight: 300; }
+nav { display: grid; gap: 13px; margin-top: 27px; }
+.link-card { display: flex; align-items: center; min-height: 90px; padding: 14px 22px 14px 18px; border: 1px solid #e8ebef; border-radius: 18px; background: #fff; color: var(--navy); text-decoration: none; box-shadow: 0 5px 13px rgba(16, 30, 54, .07); transition: transform 180ms ease, box-shadow 180ms ease; }
+.link-card:hover { transform: translateY(-2px); box-shadow: 0 8px 18px rgba(16, 30, 54, .1); }
+.link-card:active { transform: translateY(1px); box-shadow: 0 3px 8px rgba(16, 30, 54, .07); }
+.link-card:focus-visible, .instagram:focus-visible { outline: 3px solid #74aafc; outline-offset: 3px; }
+.icon-wrap { width: 58px; height: 58px; flex: 0 0 58px; border-radius: 50%; display: grid; place-items: center; background: #f7f8fc; color: var(--blue); }
+.icon-wrap svg { width: 29px; height: 29px; stroke-width: 2.1; }
+.card-title { margin-left: 23px; font-size: clamp(19px, 5.7vw, 24px); font-weight: 600; }
+.arrow { width: 25px; height: 25px; margin-left: auto; color: var(--blue); stroke-width: 2.5; }
+footer { margin-top: 18px; text-align: center; color: var(--muted); }
+.connect { display: flex; align-items: center; gap: 15px; font-size: 12px; letter-spacing: .2em; white-space: nowrap; }
+.connect span { height: 1px; flex: 1; background: var(--blue); opacity: .8; }
+.instagram { display: grid; place-items: center; width: 56px; height: 56px; margin: 18px auto 12px; border: 1px solid #e6e9ee; border-radius: 50%; color: #101827; box-shadow: 0 4px 10px rgba(16, 30, 54, .07); transition: transform 180ms ease, box-shadow 180ms ease; }
+.instagram:hover { transform: translateY(-2px); box-shadow: 0 7px 15px rgba(16, 30, 54, .1); }
+.instagram svg { width: 28px; height: 28px; stroke-width: 2.1; }
+footer p { margin: 0; font-size: 15px; font-weight: 300; }
+@media (min-width: 600px) { main { padding: 68px 32px 38px; } nav { gap: 16px; margin-top: 34px; } .link-card { min-height: 96px; } }
+@media (max-width: 380px) { main { padding-inline: 18px; } h1 { font-size: 28px; } .brand-mark { transform: scale(.9); margin-bottom: 6px; } .card-title { margin-left: 17px; } }
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; transition: none !important; } }
