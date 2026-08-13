@@ -23,7 +23,6 @@ function BrandMark() {
       <span className="brand-bar right-top" /><span className="brand-bar right-bottom" />
       <span className="circuit circuit-top" /><span className="circuit circuit-middle" /><span className="circuit circuit-bottom" />
       <span className="node node-a" /><span className="node node-b" /><span className="node node-c" /><span className="node node-d" />
-      <span className="dot dot-a" /><span className="dot dot-b" /><span className="dot dot-c" />
     </div>
   );
 }
