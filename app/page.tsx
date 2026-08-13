@@ -19,7 +19,7 @@ const links = [
 
 function BrandMark() {
   return (
-    <Image className="brand-mark" src="/logo-nelson.png" width={1254} height={1254} alt="Logo Nelson Souza Dev" priority />
+    <Image className="brand-mark" src="/logo-nelson.png" width={1490} height={1054} alt="Logo Nelson Souza Dev" priority />
   );
 }
 
