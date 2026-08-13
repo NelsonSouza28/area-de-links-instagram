@@ -6,7 +6,7 @@ html, body { margin: 0; min-height: 100%; background: #fff; }
 body { color: var(--navy); font-family: var(--font-poppins), sans-serif; }
 main { width: min(100%, 600px); min-height: 100svh; margin: 0 auto; padding: clamp(26px, 6svh, 56px) 22px 26px; }
 .header { text-align: center; }
-.brand-mark { display: block; width: 190px; height: auto; margin: -21px auto -14px; }
+.brand-mark { display: block; width: 174px; height: 174px; object-fit: contain; margin: -26px auto -18px; }
 h1 { margin: 0; font-size: clamp(27px, 8.4vw, 44px); line-height: 1.08; letter-spacing: .115em; text-indent: .115em; font-weight: 600; white-space: nowrap; }
 .dev { margin: 5px 0 15px; color: var(--blue); font-size: clamp(27px, 8vw, 34px); line-height: 1.2; letter-spacing: .28em; text-indent: .28em; font-weight: 600; }
 .divider { display: flex; align-items: center; justify-content: center; gap: 12px; margin: 0 auto 14px; }
@@ -31,6 +31,6 @@ footer { margin-top: 16px; text-align: center; color: var(--muted); }
 .instagram svg { width: 27px; height: 27px; }
 footer p { margin: 0; font-size: 14px; font-weight: 300; }
 @media (min-width: 600px) { main { padding: 56px 32px 38px; } nav { gap: 15px; margin-top: 30px; } .link-card { min-height: 90px; padding-inline: 18px 22px; } .icon-wrap { width: 58px; height: 58px; flex-basis: 58px; } }
-@media (max-width: 380px) { main { padding: 20px 17px 22px; } h1 { font-size: 26px; } .brand-mark { width: 168px; margin-top: -19px; margin-bottom: -13px; } .card-title { margin-left: 16px; } .connect { gap: 10px; font-size: 10px; } }
-@media (max-height: 760px) and (max-width: 599px) { main { padding-top: 18px; } .brand-mark { width: 158px; margin-top: -20px; margin-bottom: -14px; } .dev { margin-bottom: 10px; } .divider { margin-bottom: 11px; } nav { margin-top: 17px; gap: 9px; } .link-card { min-height: 72px; } footer { margin-top: 13px; } }
+@media (max-width: 380px) { main { padding: 20px 17px 22px; } h1 { font-size: 26px; } .brand-mark { width: 156px; height: 156px; margin-top: -27px; margin-bottom: -18px; } .card-title { margin-left: 16px; } .connect { gap: 10px; font-size: 10px; } }
+@media (max-height: 760px) and (max-width: 599px) { main { padding-top: 18px; } .brand-mark { width: 148px; height: 148px; margin-top: -28px; margin-bottom: -20px; } .dev { margin-bottom: 10px; } .divider { margin-bottom: 11px; } nav { margin-top: 17px; gap: 9px; } .link-card { min-height: 72px; } footer { margin-top: 13px; } }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
