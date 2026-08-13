@@ -1,5 +1,6 @@
 import { ArrowRight, BriefcaseBusiness } from "lucide-react";
 import { FaGithub, FaInstagram, FaLinkedinIn, FaWhatsapp } from "react-icons/fa6";
+import Image from "next/image";
 
 const SOCIAL_LINKS = {
   portfolio: "#",
@@ -18,12 +19,7 @@ const links = [
 
 function BrandMark() {
   return (
-    <div className="brand-mark" aria-hidden="true">
-      <span className="brand-bar left-top" /><span className="brand-bar left-bottom" />
-      <span className="brand-bar right-top" /><span className="brand-bar right-bottom" />
-      <span className="circuit circuit-top" /><span className="circuit circuit-middle" /><span className="circuit circuit-bottom" />
-      <span className="node node-a" /><span className="node node-b" /><span className="node node-c" /><span className="node node-d" />
-    </div>
+    <Image className="brand-mark" src="/logo-nelson.png" width={1254} height={1254} alt="Logo Nelson Souza Dev" priority />
   );
 }
 

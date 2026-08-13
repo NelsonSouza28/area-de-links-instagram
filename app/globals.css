@@ -6,21 +6,7 @@ html, body { margin: 0; min-height: 100%; background: #fff; }
 body { color: var(--navy); font-family: var(--font-poppins), sans-serif; }
 main { width: min(100%, 600px); min-height: 100svh; margin: 0 auto; padding: clamp(26px, 6svh, 56px) 22px 26px; }
 .header { text-align: center; }
-.brand-mark { position: relative; width: 156px; height: 104px; margin: 0 auto 15px; }
-.brand-bar { position: absolute; width: 66px; height: 14px; border-radius: 9px; }
-.left-top { left: 5px; top: 29px; background: var(--navy); transform: rotate(-37deg); }
-.left-bottom { left: 5px; top: 66px; background: var(--navy); transform: rotate(37deg); }
-.right-top { right: 5px; top: 29px; background: var(--blue); transform: rotate(37deg); }
-.right-bottom { right: 5px; top: 66px; background: var(--blue); transform: rotate(-37deg); }
-.circuit { position: absolute; height: 4px; border-radius: 4px; transform-origin: left; }
-.circuit-top { width: 46px; left: 65px; top: 50px; background: var(--navy); transform: rotate(-40deg); }
-.circuit-middle { width: 39px; left: 66px; top: 57px; background: var(--navy); transform: rotate(8deg); }
-.circuit-bottom { width: 58px; left: 43px; top: 91px; background: var(--blue); transform: rotate(-41deg); }
-.node { position: absolute; width: 15px; height: 15px; border-radius: 4px; box-shadow: 0 2px 5px rgba(8,104,245,.18); }
-.node-a { left: 76px; top: 1px; background: var(--blue); }
-.node-b { left: 58px; top: 49px; background: var(--navy); }
-.node-c { right: 43px; top: 55px; background: var(--navy); }
-.node-d { right: 37px; bottom: 0; background: var(--blue); }
+.brand-mark { display: block; width: 174px; height: 174px; object-fit: contain; margin: -26px auto -18px; }
 h1 { margin: 0; font-size: clamp(27px, 8.4vw, 44px); line-height: 1.08; letter-spacing: .115em; text-indent: .115em; font-weight: 600; white-space: nowrap; }
 .dev { margin: 5px 0 15px; color: var(--blue); font-size: clamp(27px, 8vw, 34px); line-height: 1.2; letter-spacing: .28em; text-indent: .28em; font-weight: 600; }
 .divider { display: flex; align-items: center; justify-content: center; gap: 12px; margin: 0 auto 14px; }
@@ -45,6 +31,6 @@ footer { margin-top: 16px; text-align: center; color: var(--muted); }
 .instagram svg { width: 27px; height: 27px; }
 footer p { margin: 0; font-size: 14px; font-weight: 300; }
 @media (min-width: 600px) { main { padding: 56px 32px 38px; } nav { gap: 15px; margin-top: 30px; } .link-card { min-height: 90px; padding-inline: 18px 22px; } .icon-wrap { width: 58px; height: 58px; flex-basis: 58px; } }
-@media (max-width: 380px) { main { padding: 20px 17px 22px; } h1 { font-size: 26px; } .brand-mark { transform: scale(.88); margin-top: -7px; margin-bottom: 0; } .card-title { margin-left: 16px; } .connect { gap: 10px; font-size: 10px; } }
-@media (max-height: 760px) and (max-width: 599px) { main { padding-top: 18px; } .brand-mark { transform: scale(.82); margin-top: -11px; margin-bottom: -5px; } .dev { margin-bottom: 10px; } .divider { margin-bottom: 11px; } nav { margin-top: 17px; gap: 9px; } .link-card { min-height: 72px; } footer { margin-top: 13px; } }
+@media (max-width: 380px) { main { padding: 20px 17px 22px; } h1 { font-size: 26px; } .brand-mark { width: 156px; height: 156px; margin-top: -27px; margin-bottom: -18px; } .card-title { margin-left: 16px; } .connect { gap: 10px; font-size: 10px; } }
+@media (max-height: 760px) and (max-width: 599px) { main { padding-top: 18px; } .brand-mark { width: 148px; height: 148px; margin-top: -28px; margin-bottom: -20px; } .dev { margin-bottom: 10px; } .divider { margin-bottom: 11px; } nav { margin-top: 17px; gap: 9px; } .link-card { min-height: 72px; } footer { margin-top: 13px; } }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
